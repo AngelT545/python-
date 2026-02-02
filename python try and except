@@ -1,0 +1,57 @@
+my_global_int = 67
+print(my_global_int)
+
+def main():
+    print("Starting The Code Challenge")
+
+    # -------------------------------
+    # Example 1: Try/Except for user input (ValueError)
+    # -------------------------------
+    print("\nExample 1: Converting input to an integer")
+    try:
+        user_num = int(input("Enter a number: "))
+        print("You entered:", user_num)
+    except ValueError:
+        print("Error: That was not a valid integer.")
+
+    # -------------------------------
+    # Example 2: Try/Except for division (ZeroDivisionError)
+    # -------------------------------
+    print("\nExample 2: Division")
+    try:
+        x = 42
+        y = int(input("Enter a number to divide 42 by: "))
+        result = x / y
+        print("Result:", result)
+    except ZeroDivisionError:
+        print("Error: You cannot divide by zero.")
+    except ValueError:
+        print("Error: Please enter a valid number.")
+
+    # -------------------------------
+    # Example 3: Try/Except for list index (IndexError)
+    # -------------------------------
+    print("\nExample 3: List index access")
+    my_list = [10, 20, 30]
+    try:
+        print(my_list[5])
+    except IndexError:
+        print("Error: That index does not exist in the list.")
+
+    # -------------------------------
+    # Example 4: Try/Except with else and finally
+    # -------------------------------
+    print("\nExample 4: else and finally")
+    try:
+        num = int(input("Enter another number: "))
+    except ValueError:
+        print("Error: Invalid input.")
+    else:
+        print("You successfully entered:", num)
+    finally:
+        print("This always runs.")
+
+    print("\nEnding The Code Challenge")
+
+# Calling main() function
+main()

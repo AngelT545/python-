@@ -1,0 +1,35 @@
+def main():
+    print("Starting The Code Challenge")
+
+    print("Starting <Specific Part> Of Code Challenge")
+
+    # ----------------------------------
+    # Example 1: Simple counting while loop
+    print("\nExample 1: Counting from 1 to 5")
+    count = 1
+    while count <= 5:
+        print(count)
+        count += 1
+
+    # ----------------------------------
+    # Example 2: While loop with a condition
+    print("\nExample 2: Countdown")
+    countdown = 5
+    while countdown > 0:
+        print("Countdown:", countdown)
+        countdown -= 1
+    print("Blast off!")
+
+    # ----------------------------------
+    # Example 3: While loop using user input
+    print("\nExample 3: Keep looping until user enters 0")
+    num = 1
+    while num != 0:
+        num = int(input("Enter a number (0 to stop): "))
+        print("You entered:", num)
+
+    print("\nEnding <Specific Part> Of Code Challenge")
+    print("Ending The Code Challenge")
+
+
+main()

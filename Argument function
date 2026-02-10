@@ -1,0 +1,33 @@
+my_list = [42, ["apple", "orange"], "Hello",["Centauri", "Minbari", "Narn", "Vorlon"]]
+print("This is my_list")
+print(my_list)
+print("These are items in my_list")
+print(my_list[1])
+print(my_list[3])
+print(my_list[0])
+
+my_string = 'Babylon_5'
+my_list = ['B','a','b','y','l','o','n','_','5'] 
+print(my_string[3:6])
+print(my_list[3:6])
+# my_string[0] = 'p'
+my_string ='P'+ my_string[1:]
+my_list[0] = 'p'
+# elements beginning up to but not including the 4th
+new_list = my_list[:4]
+print(new_list)
+# elements from -4 up to -2
+another_new_list = my_list[-4:-2]
+print(another_new_list)
+
+my_list = [9,2,3,4,6,8,7,5,1]
+print(my_list)
+# fixing index 0
+my_list[0] = 1
+print(my_list)
+# fixing index 4 thru 8 (up to 7)
+my_list[4:8] = [5,6,7,8]
+print(my_list)
+# fixing index -1
+my_list[-1] = 9
+print(my_list)

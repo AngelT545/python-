@@ -1,0 +1,44 @@
+def main():
+    
+    # print()
+    print("Welcome to the Built-in Functions Lab!")
+    
+    # input()
+    user_number = input("Enter a number (can be negative): ")
+    
+    # type() before conversion
+    print("Type before int conversion:", type(user_number))
+    
+    # int()
+    user_number = int(user_number)
+    
+    # type() after conversion
+    print("Type after int conversion:", type(user_number))
+    
+    # abs()
+    absolute_value = abs(user_number)
+    print("Absolute value:", absolute_value)
+    
+    # Create a list
+    numbers = [3, 7, -2, 10, 5]
+    
+    # len()
+    print("Length of list:", len(numbers))
+    
+    # -------- 4 Additional Built-in Functions --------
+    
+    # max()
+    print("Maximum value:", max(numbers))
+    
+    # min()
+    print("Minimum value:", min(numbers))
+    
+    # sum()
+    print("Sum of list:", sum(numbers))
+    
+    # round()
+    division_result = 7 / 3
+    print("Rounded result of 7/3:", round(division_result, 2))
+
+
+main()
